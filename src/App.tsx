@@ -5,6 +5,7 @@ import { Logo } from './components/Logo';
 import './theme.css';
 import './global.css';
 import { Menu } from './components/Menu';
+import { CountDown } from './components/CountDown';
 
 function App() {
   return (
@@ -17,6 +18,11 @@ function App() {
       <Container>
         <Content>
           <Menu />
+        </Content>
+      </Container>
+      <Container>
+        <Content>
+          <CountDown />
         </Content>
       </Container>
     </>
