@@ -6,6 +6,7 @@ import './theme.css';
 import './global.css';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
+import { Input } from './components/Input';
 
 function App() {
   return (
@@ -29,8 +30,7 @@ function App() {
         <Content>
           <form className='form' action=''>
             <div className='formRow'>
-              <label htmlFor='input'>Tarefa:</label>
-              <input id='input' type='text' />
+              <Input id='inputTask' type='text' />
             </div>
             <div className='formRow'>
               <p>Lorem ipsum dolor sit amet.</p>
