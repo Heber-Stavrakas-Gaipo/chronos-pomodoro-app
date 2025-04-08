@@ -30,7 +30,13 @@ function App() {
         <Content>
           <form className='form' action=''>
             <div className='formRow'>
-              <Input id='inputTask' type='text' />
+              <Input
+                id='inputTask'
+                type='text'
+                labelText='Tarefa:'
+                placeholder='Digite a tarefa'
+                required
+              />
             </div>
             <div className='formRow'>
               <p>Lorem ipsum dolor sit amet.</p>
