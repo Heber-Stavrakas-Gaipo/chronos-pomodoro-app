@@ -8,8 +8,19 @@ import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
 import { Input } from './components/Input';
 import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
+import { PlayCircleIcon } from 'lucide-react';
+import { useState } from 'react';
 
 function App() {
+  const [iconColor, setIconColor] = useState(1);
+  const handleIconColor = () => {
+    if (iconColor == 1) {
+      setIconColor(0);
+    } else {
+      setIconColor(1);
+    }
+  };
   return (
     <>
       <Container>
@@ -46,7 +57,11 @@ function App() {
               <Cycles />
             </div>
             <div className='formRow'>
-              <button>Enviar</button>
+              <DefaultButton
+                onClick={handleIconColor}
+                icon={<PlayCircleIcon />}
+                color={iconColor ? 'green' : 'red'}
+              />
             </div>
           </form>
         </Content>
