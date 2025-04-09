@@ -11,6 +11,7 @@ import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
 import { useState } from 'react';
+import { Footer } from './components/Footer';
 
 function App() {
   const [iconColor, setIconColor] = useState(1);
@@ -64,6 +65,11 @@ function App() {
               />
             </div>
           </form>
+        </Content>
+      </Container>
+      <Container>
+        <Content>
+          <Footer />
         </Content>
       </Container>
     </>
